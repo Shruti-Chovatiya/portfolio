@@ -1,0 +1,262 @@
+@font-face {
+    font-family: Raleway;
+    src: url('../Assets/Fonts/Raleway/static/Raleway-Regular.ttf');
+    font-style: normal;
+}
+
+
+* {
+    font-family: Raleway;
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo h1 {
+    margin: 0;
+}
+
+.logo p {
+    margin: 0;
+    font-style: italic;
+    padding-top: 10px;
+}
+
+section {
+    padding: 20px;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+h2{
+    font-size: 35px;
+}
+.bio p{
+    font-size: 18px;
+}
+#about {
+    background-color: #f2f2f2;
+}
+
+#about .profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 40px;
+}
+
+#skills {
+    background-color: #e7e7e7;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+#skills li {
+    background: #fff;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+#projects {
+    background-color: #f9f9f9;
+}
+.project-info{
+    margin-left: 50px;
+}
+
+.project-info>h3{
+    font-size: 40px;
+}
+
+.project-info-left{
+    margin-right: 50px;
+}
+
+.project-info-left>h3{
+    font-size: 40px;
+}
+.project {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.project img {
+    width: 500px;
+    height:auto;
+    object-fit: cover;
+    margin-right: 50px;
+
+}
+.project-img-rgt{
+    padding-left: 50;
+}
+
+.project-info {
+    max-width: 600px;
+}
+
+.info-para{
+    font-size: 20px;
+}
+.padding{
+    padding-top: 50px;
+}
+#resume {
+    background-color: #e2e2e2;
+}
+
+#resume a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+.txt{
+    font-size: 20px;
+}
+
+#contact {
+    background-color: #f2f2f2;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 1000px;
+    }
+    .project img {
+        width: 400px;
+    }
+    .project-info > h3 {
+        font-size: 35px;
+    }
+    .project-info-left > h3 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 900px;
+    }
+    .project {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .project img {
+        width: 100%;
+        margin-right: 0;
+    }
+    .project-info {
+        margin-left: 0;
+    }
+    .bio p {
+        font-size: 16px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    .info-para {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+    }
+    .logo h1 {
+        font-size: 24px;
+    }
+    .logo p {
+        font-size: 14px;
+    }
+    .profile-image {
+        width: 120px;
+        height: 120px;
+    }
+    .intro-para {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .per-img {
+        width: 100%;
+    }
+    .project-info > h3 {
+        font-size: 30px;
+    }
+    .project-info-left > h3 {
+        font-size: 30px;
+    }
+    .info-para {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 10px;
+    }
+    .logo h1 {
+        font-size: 20px;
+    }
+    .logo p {
+        font-size: 12px;
+    }
+    .profile-image {
+        width: 100px;
+        height: 100px;
+    }
+    .intro-para {
+        padding: 0 10px;
+    }
+    .project-info > h3 {
+        font-size: 25px;
+    }
+    .project-info-left > h3 {
+        font-size: 25px;
+    }
+    .info-para {
+        font-size: 14px;
+    }
+    .txt {
+        font-size: 18px;
+    }
+}
